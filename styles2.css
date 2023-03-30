@@ -1,0 +1,250 @@
+/* Import styles from the landing page */
+@import 'styles1.css';
+
+/* Scroll animation */
+.scroll-animate {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* How it works */
+.how-it-works {
+  padding: 3rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.feature {
+  flex-basis: calc(100% / 3 - 2rem);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.feature:hover {
+ 
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* About me */
+.about-me {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  flex-basis: 100%;
+  margin-right: 1rem auto;
+}
+
+.about-me div {
+  flex-basis: 100%;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.accomplishments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.accomplishment {
+  flex-basis: calc(100% / 3 - 2.5rem);
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100px);
+  min-width: 250px;
+}
+
+.accomplishment.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.accomplishment img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.accomplishment h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.accomplishment ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.accomplishment li {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.accomplishment p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.accomplishment:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Who the class is for */
+.who-is-it-for {
+  padding: 3rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.who-is-it-for h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.potential-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.potential-client {
+  flex-basis: calc(100% / 3 - 2rem);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px
+  6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.potential-client.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.potential-client img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.potential-client h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.potential-client p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.potential-client:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .features,
+  .accomplishments,
+  .potential-clients {
+    flex-direction: column;
+  }
+
+  .feature,
+  .accomplishment,
+  .potential-client {
+    flex-basis: 100%;
+    margin: 1rem 0;
+    min-width: auto;
+  }
+
+  .accomplishment {
+    flex-basis: 100%;
+    margin: 1rem 0;
+  }
+}
+

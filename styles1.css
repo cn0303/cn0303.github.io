@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#nav-logo {
+  height: 100px;
+  margin-right: 1rem;
+}
+
+#menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu-popup {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 5px;
+  z-index: 200;
+}
+
+#menu-popup a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#menu-popup a:hover {
+  background-color: #555;
+}
+
+.blue {
+  color: #41a1f7;
+}
+
+.yellow {
+  color: #f7b241;
+}
+
+
+.hero {
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 0rem; /* Adjust this value according to the height of the header */
+    position: relative;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1; /* Adjust this value to change the opacity of the background image */
+    z-index: -1;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    /*text-shadow: 1px 1px #000; /* Add a subtle text shadow to improve readability */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.hero img {
+    position: absolute;
+    max-width: 100%;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 2rem 1rem; /* Adjust this value to increase or decrease the space between the buttons */
+    box-shadow: 0 4px #000; /* Add a box-shadow to create a 3D button look */
+    transition: box-shadow 0.2s ease-in-out; /* Add a transition effect to the box-shadow when hovering */
+}
+
+.btn:hover {
+    background-color: #555;
+    box-shadow: 0 8px #000; 
+
+
+

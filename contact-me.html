@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact-me.css">
+</head>
+<body>
+  <header>
+        <a href="index1.html">
+          <img src="logo.png" alt="Word of Mouth Logo" id="nav-logo">
+        </a>
+        <button id="menu-btn">&#9776;</button>
+  </header>
+
+  <div id="menu-popup" class="menu-list">
+    <a href="index1.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="contact-me.html">Contact Me</a>
+  </div>
+
+  <main>
+    <section class="hero" style="opacity: 0.85;">
+       <div class="hero-content">
+           <h1><span class="blue">Contact</span> <span class="yellow">Us</span></h1>
+       </div>
+    </section>
+    <section class="contact-form-section">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="https://script.google.com/macros/s/AKfycbzkYWjsHF92LZnvz6l39AeaTHCmlItGc5uhBUOvGNd7a0IEHtLb8JQKKY6gTxJUt72sgQ/exec" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number</label>
+          <input type="tel" id="contact-number" name="contact" placeholder="Preferably Whatsapp" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" placeholder="Your personal email id"required>
+        </div>
+        <div class="form-group">
+          <label for="date-time">Preferred Date and Time</label>
+          <input type="datetime-local" id="date-time" name="date" placeholder="Your convenient data/time"required>
+        </div>
+        <div class="form-group">
+          <label for="expectations">Course Expectations</label>
+          <textarea id="expectations" name="expectations" rows="4" placeholder="Comments"required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <!-- Add your footer here -->
+  </footer>
+  <script src="contact-me.js"></script>
+</body>
+</html>
